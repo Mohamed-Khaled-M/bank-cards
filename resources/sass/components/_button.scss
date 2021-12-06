@@ -1,0 +1,78 @@
+.btn-primary {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+
+  &,
+  &:active,
+  &:link,
+  &:visited {
+    font-size: $default-font;
+    padding: 1.6rem 4.1rem;
+    border-radius: 50rem;
+    border: 1px solid $color-secondary-light;
+    background-color: $color-secondary-light;
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    transition: $transition-time;
+
+    @media (max-width: 352px) {
+      font-size: $default-font - 0.2;
+      padding: 1.5rem 3.1rem;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $color-secondary-dark;
+    background-color: $color-secondary-dark;
+  }
+}
+
+.btn-transparent {
+
+  &,
+  &:active,
+  &:link,
+  &:visited {
+    font-size: $default-font;
+    padding: 1.6rem 4.1rem;
+    border-radius: 50rem;
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    transition: $transition-time;
+
+    @media (max-width: 352px) {
+      font-size: $default-font - 0.2;
+      padding: 1.5rem 3.1rem;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $color-primary;
+  }
+}
+
+.move-to-top {
+  height: 5rem;
+  width: 5rem;
+  background-color: $color-secondary-light;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  font-size: $default-font;
+  z-index: 99;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+}

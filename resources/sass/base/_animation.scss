@@ -1,0 +1,41 @@
+@keyframes hidden {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes swing {
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes steamLarge {
+  0% {
+    stroke-dashoffset: 13;
+    opacity: 0.6;
+  }
+
+  100% {
+    stroke-dashoffset: 39;
+    opacity: 0;
+  }
+}
+
+@keyframes steamSmall {
+  10% {
+    stroke-dashoffset: 9;
+    opacity: 0.6;
+  }
+
+  80% {
+    stroke-dashoffset: 27;
+    opacity: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 27;
+    opacity: 0;
+  }
+}

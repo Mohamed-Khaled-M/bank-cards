@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 992px) {
+    font-size: 56%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 48%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: $default-font;
+}
+
+a {
+
+  &,
+  &:link,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  border-radius: .8rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+  }
+
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-gray {
+  background-color: $light-gray !important;
+}
+
+.dark-theme {
+  .bg-white {
+    background-color: $color-primary !important;
+
+    * {
+      color: $white;
+    }
+
+    i {
+      color: $color-secondary-light;
+    }
+
+    .card:hover .card__heading--icon {
+      color: $white;
+    }
+
+    .card__heading--icon i {
+      color: inherit;
+    }
+
+    .paragraph {
+      color: $light-white !important;
+    }
+
+    .navigation__links--item.active {
+      color: $color-secondary-light !important;
+    }
+
+    .counter__number {
+      color: $color-secondary-light;
+    }
+  }
+
+  .bg-gray {
+    background-color: $color-primary-light !important;
+
+    * {
+      color: $white;
+    }
+
+    i {
+      color: $color-secondary-light;
+    }
+
+    q,
+    .client__info--date {
+      color: #c2d0da;
+    }
+
+    .paragraph {
+      color: $light-white !important;
+    }
+
+    &.navigation__search--input {
+      color: $black !important;
+      background: $white !important;
+    }
+  }
+
+}

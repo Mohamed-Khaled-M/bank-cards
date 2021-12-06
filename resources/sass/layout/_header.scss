@@ -1,0 +1,29 @@
+.header {
+  background-color: $color-secondary;
+  height: 90vh;
+
+  @media (max-width: 991px) {
+    height: 80vh;
+
+    .secondary-heading {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .paragraph {
+    color: $light-white;
+
+    @media (max-width: 991px) {
+      margin-bottom: 2.6rem;
+    }
+
+    @media (min-width: 240px) and (max-width: 450px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.secondary-header {
+  position: relative;
+  background-color: $color-secondary;
+}

@@ -1,0 +1,48 @@
+.footer {
+  background-color: $color-primary;
+  padding: 6rem 0;
+
+  .primary-heading {
+    margin-bottom: 3rem;
+
+    i {
+      color: $color-secondary-light;
+    }
+  }
+
+  &__col-heading {
+    margin-bottom: 3rem;
+    color: $white;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+  }
+
+  &__links {
+    color: $gray;
+
+    a {
+      display: block;
+      color: inherit;
+      transition: $transition-time;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  &__post {
+    a {
+      color: $white;
+    }
+
+    &--date {
+      color: $gray;
+      font-size: 1.5rem;
+    }
+  }
+}
